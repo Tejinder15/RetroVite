@@ -7,7 +7,7 @@ import { VIDEO } from "../pages/Home/Home";
 export const VideoCard = ({ item }: { item: VIDEO }) => {
   return (
     <div className="rounded-xl">
-      <Link to={`/watch/${item._id}`} className="border-2 border-red-500 block">
+      <Link to={`/watch/${item._id}`} className="block">
         <img src={item.thumbnail} alt={item.title} className="rounded-xl" />
       </Link>
       <div className="flex items-start pt-2.5 pr-1 group">
